@@ -1,17 +1,14 @@
-/* ============================================================
-   SHARED STYLES — used by home.html, about.html, projects.html,
-   skills.html, experience.html
-   ============================================================ */
+
 
 :root{
-  --bg:          #f3cf8e;   /* vibrant warm beige */
-  --bg-deep:     #eabd6c;   /* deeper beige, for header/footer bands */
-  --bg-card:     #faf1de;   /* light card surface */
-  --ink:         #3a2a17;   /* warm near-black text */
-  --ink-soft:    #7c6644;   /* muted warm brown */
-  --accent:      #c8501f;   /* rust orange — the pop colour */
-  --accent-ink:  #fdf3e6;   /* text on top of accent */
-  --teal:        #1f6f5c;   /* secondary accent */
+  --bg:          #f3cf8e;   
+  --bg-deep:     #eabd6c;   
+  --bg-card:     #faf1de;  
+  --ink:         #3a2a17;  
+  --ink-soft:    #7c6644;  
+  --accent:      #c8501f;  
+  --accent-ink:  #fdf3e6;   
+  --teal:        #1f6f5c;   
   --divider:     #dba75f;
 }
 
