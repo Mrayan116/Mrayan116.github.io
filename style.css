@@ -1064,6 +1064,25 @@ box-shadow: 0 7px 16px rgba(58, 42, 23, 0.2);
 
 }
 
+
+
+.project-in-progress {
+border-color: var(--teal);
+}
+
+.project-progress-badge {
+font-size: 0.8rem;
+font-weight: 600;
+padding: 6px 12px;
+border-radius: 999px;
+background: var(--teal);
+color: white;
+}
+
+.project-in-progress:hover {
+border-color: var(--teal);
+}
+
 /* ---------------- RESPONSIVE ---------------- */
 
 @media (max-width: 640px){
