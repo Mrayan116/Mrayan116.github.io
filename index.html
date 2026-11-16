@@ -1,201 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-
-  .home-wrap{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 24px;
-    background: radial-gradient(circle at 50% 0%, var(--bg-deep) 0%, var(--bg) 62%);
-  }
-
-  .home-card{
-    text-align: center;
-    max-width: 460px;
-  }
-
-  .home-photo {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 7px solid var(--bg-card);
-    box-shadow: 0 14px 34px rgba(58, 42, 23, 0.25);
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-  .home-name{
-    margin-top: 28px;
-    font-size: 2rem;
-  }
-
-  .home-role{
-    margin-top: 8px;
-    color: var(--ink-soft);
-    font-size: 1.05rem;
-  }
-
-  /* social icon row */
-  .socials{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 32px;
-  }
-
-  .social-btn{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--bg-card);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent);
-    border: 2px solid var(--divider);
-    transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, color 0.18s ease;
-  }
-
-  .social-btn svg{
-    width: 19px;
-    height: 19px;
-    fill: currentColor;
-  }
-
-  .social-btn:hover{
-    transform: scale(1.3);
-    background: var(--accent);
-    color: var(--accent-ink);
-    box-shadow: 0 8px 18px rgba(200, 80, 31, 0.4);
-    border-color: var(--accent);
-  }
-
-  .social-btn:focus-visible{
-    outline: 2px solid var(--teal);
-    outline-offset: 3px;
-  }
-
-  /* section links */
-  .section-links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
-    margin-top: 44px;
-  }
-
-  .section-links a{
-    padding: 12px 26px;
-    border-radius: 999px;
-    background: var(--bg-card);
-    border: 2px solid var(--divider);
-    font-weight: 600;
-    font-size: 0.98rem;
-    transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
-  }
-
-  .section-links a:hover{
-    transform: translateY(-3px) scale(1.04);
-    background: var(--accent);
-    color: var(--accent-ink);
-    border-color: var(--accent);
-    box-shadow: 0 10px 20px rgba(200, 80, 31, 0.3);
-  }
-
-</style>
-</head>
-<body>
-
-<div class="home-wrap">
-  <div class="home-card">
-
-    <img class="home-photo" src="photo.jpg" alt="photo">
-
-    <h1 class="home-name">Muhammad Rayan</h1>
-    <p class="home-role">Student / Software Engineering</p>
-
-    <div class="socials">
-
-      <!-- GMAIL -->
-      <a class="social-btn"
-       href="mailto:rayan26278@gmail.com"
-       title="Email me">
-
-        <svg viewBox="0 0 24 24">
-        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
-    </svg>
-
-</a>
-
-      <!-- PHONE -->
-      <a class="social-btn"
-   href="tel:+16476145534"
-   title="Call me">
-
-    <svg viewBox="0 0 24 24">
-        <path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.6c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.3 0 .7-.2 1l-2 2.1z"/>
-    </svg>
-
-</a>
-
-      <!-- GITHUB -->
-      <a class="social-btn"
-   href="https://github.com/Mrayan116"
-   title="GitHub"
-   target="_blank"
-   rel="noopener">
-
-    <svg viewBox="0 0 24 24">
-        <path d="M12 .5C5.7.5.5 5.7.5 12c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.5 5.7 18.3.5 12 .5z"/>
-    </svg>
-
-</a>
-
-      <!-- LINKEDIN -->
-      <a class="social-btn"
-   href="https://www.linkedin.com/in/muhammad-rayan-a99078366/"
-   title="LinkedIn"
-   target="_blank"
-   rel="noopener">
-
-    <svg viewBox="0 0 24 24">
-        <path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.3-1.9 3.6 0 4.2 2.3 4.2 5.4v6.3zM5.7 7.4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM7.5 20.4h-3.6V9h3.6v11.4z"/>
-    </svg>
-
-</a>
-
-    </div>
-
-    <!-- links to the separate pages -->
-    <div class="section-links">
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="experience.html">Experience &amp; Education</a>
-    </div>
-
-  </div>
-</div>
-
-
-<footer style="text-align: center;">
-    <p>About Me | Muhammad Rayan</p>
-    <p>Contact: <a href="mailto:rayan26278@gmail.com">rayan26278@gmail.com</a></p>
-</footer>
-
-
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#050505">
+        <meta name="description" content="Muhammad Rayan is a Software Engineering co-op student at the University of Guelph building full-stack and AI-powered applications.">
+        <title>Muhammad Rayan | Software Engineering & AI</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip" href="#main">Skip to content</a>
+        <div class="ambient" aria-hidden="true"></div>
+        <canvas id="snake-cursor" aria-hidden="true"></canvas>
+        <div class="layout" id="top">
+            <aside class="sidebar">
+                <div class="intro">
+                    <a class="wordmark" href="#top" aria-label="Go to top"><span class="mark">M</span><span class="wordmark-text">Muhammad Rayan</span></a>
+                    <p class="eyebrow"><span class="status-dot"></span> Software engineering student · U of G</p>
+                    <h1>Building software<br>that <span class="accent">makes sense.</span></h1>
+                    <p class="intro-copy">I'm a Software Engineering co-op student interested in full-stack development, AI, and building useful things that people actually want to use.</p>
+                    <nav class="side-nav" aria-label="Main sections">
+          <a href="#about" class="nav-link active"><span class="nav-rule"></span>About</a>
+          <a href="#projects" class="nav-link"><span class="nav-rule"></span>Projects</a>
+          <a href="#experience" class="nav-link"><span class="nav-rule"></span>Experience</a>
+          <a href="#skills" class="nav-link"><span class="nav-rule"></span>Skills</a>
+          <a href="#contact" class="nav-link"><span class="nav-rule"></span>Contact</a>
+        </nav>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="socials">
+          <a href="https://github.com/Mrayan116" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.12c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1.01 1.73 2.65 1.23 3.3.94.1-.73.39-1.23.71-1.51-2.5-.29-5.13-1.25-5.13-5.56 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.98 0 0 .94-.3 3.09 1.16a10.73 10.73 0 0 1 5.62 0c2.15-1.46 3.08-1.16 3.08-1.16.62 1.55.23 2.7.12 2.98.73.79 1.16 1.8 1.16 3.03 0 4.32-2.63 5.26-5.14 5.55.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.77.54A11.25 11.25 0 0 0 12 .75Z"/></svg></a>
+          <a href="https://www.linkedin.com/in/muhammad-rayan-a99078366/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.1 3a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2ZM3.3 9h3.6v12H3.3V9Zm5.7 0h3.45v1.64h.05c.48-.91 1.65-1.87 3.4-1.87 3.64 0 4.3 2.39 4.3 5.49V21h-3.6v-5.98c0-1.43-.03-3.27-2-3.27-2.01 0-2.31 1.56-2.31 3.17V21H9V9Z"/></svg></a>
+          <a href="mailto:rayan26278@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.4l9 6.1 9-6.1V7H3Zm18 10V9.82l-8.44 5.72a1 1 0 0 1-1.12 0L3 9.82V17h18Z"/></svg></a>
+        </div>
+                    <p>Built with care, curiosity, and coffee.</p>
+                </div>
+            </aside>
+            <main id="main" class="content">
+                <div class="top-controls">
+                    <button class="trail-toggle" type="button" aria-pressed="true" title="Toggle gold cursor trail"><span aria-hidden="true">✦</span> Trail on</button>
+                    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme"><span class="theme-icon">☼</span><span>Theme</span></button>
+                </div>
+                <section id="about" class="section about-section reveal" aria-labelledby="about-heading">
+                    <div class="mobile-section-label">01 / About</div>
+                    <div class="about-grid">
+                        <div>
+                            <p class="eyebrow section-eyebrow">HELLO THERE <span class="tiny-spark">✳</span></p>
+                            <h2 id="about-heading" class="section-lead">I like making <span class="soft-highlight">ideas real.</span></h2>
+                            <p>I'm <strong>Muhammad Rayan</strong>, a Software Engineering student at the <strong>University of Guelph</strong>, exploring the space between solid engineering and intelligent software.</p>
+                            <p>I've built projects ranging from AI-powered email tools to computer vision experiments. I enjoy understanding how systems work, making thoughtful technical choices, and turning messy problems into simple experiences.</p>
+                            <p>I'm especially interested in <strong>software engineering, AI/ML, and backend systems</strong>, and I'm looking to keep learning through real-world co-op experience.</p>
+                            <div class="quick-actions"><a href="#projects" class="primary-button">Explore my work <span aria-hidden="true">↗</span></a><a href="mailto:rayan26278@gmail.com" class="text-button">Get in touch <span aria-hidden="true">↗</span></a></div>
+                        </div>
+                        <div class="photo-shell">
+                            <img src="photo.jpg" alt="Portrait of Muhammad Rayan" loading="eager">
+                            <div class="photo-note"><span class="status-dot"></span> Open to co-op opportunities</div>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects" class="section reveal" aria-labelledby="projects-heading">
+                    <div class="section-heading">
+                        <span class="section-num">01</span>
+                        <div>
+                            <p class="eyebrow">SELECTED WORK</p>
+                            <h2 id="projects-heading">Things I've built<span class="accent">.</span></h2>
+                        </div>
+                    </div>
+                    <p class="section-subtitle">A few projects I've enjoyed working on. Select a category to explore the work.</p>
+                    <div class="filters" role="group" aria-label="Filter projects">
+                        <button type="button" class="filter active" data-filter="all" aria-pressed="true">All projects</button>
+                        <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI / ML</button>
+                        <button type="button" class="filter" data-filter="software" aria-pressed="false">Software</button>
+                    </div>
+                    <div class="project-list">
+                        <article class="project-card" data-category="ai software">
+                            <div class="project-visual visual-inbox" aria-hidden="true">
+                                <div class="mini-window">
+                                    <div class="mini-top"><span></span><span></span><span></span><small>InboxIQ</small></div>
+                                    <div class="mini-body">
+                                        <div class="mini-side"><i></i><i></i><i></i><i></i></div>
+                                        <div class="mini-main">
+                                            <div class="mini-label">Priority inbox <b>✦</b></div>
+                                            <div class="mini-email"><strong>Important message</strong><em>High priority</em></div>
+                                            <div class="mini-email"><strong>Meeting follow-up</strong><em>Summary ready</em></div>
+                                            <div class="mini-email"><strong>Weekly updates</strong><em>Low priority</em></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-overline"><span>FEATURED PROJECT</span><span>AI · FULL STACK</span></div>
+                                <h3>InboxIQ <span aria-hidden="true">↗</span></h3>
+                                <p>An AI-powered email assistant that helps users prioritize messages, summarize conversations, and draft smarter replies. Built around making busy inboxes easier to manage.</p>
+                                <div class="tags"><span>Python</span><span>FastAPI</span><span>Next.js</span><span>TypeScript</span><span>AI APIs</span></div>
+                                <a class="project-link" href="https://github.com/Mrayan116/InboxIQ---1" target="_blank" rel="noopener noreferrer">Explore code <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </article>
+                        <article class="project-card" data-category="ai software">
+                            <div class="project-visual visual-code" aria-hidden="true">
+                                <div class="terminal">
+                                    <div class="terminal-bar"><span class="terminal-dots">● ● ●</span><span>codecolleague / assistant</span></div>
+                                    <div class="terminal-content"><span class="term-comment">// Let's work through this together</span><span><b>def</b> explain(code):</span><span class="indent"><em>return</em> helpful_feedback(code)</span><span class="terminal-answer">✓ Hint ready · try the next step</span><span class="cursor-line">▌</span></div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-overline"><span>FEATURED PROJECT</span><span>AI · DEVELOPER TOOLS</span></div>
+                                <h3>CodeColleague <span aria-hidden="true">↗</span></h3>
+                                <p>An AI coding companion for working through programming problems, debugging code, and practising with guided hints and challenges.</p>
+                                <div class="tags"><span>Python</span><span>FastAPI</span><span>Next.js</span><span>PostgreSQL</span><span>LLMs</span></div>
+                                <a class="project-link" href="https://github.com/Mrayan116/CodeColleagues---2" target="_blank" rel="noopener noreferrer">Explore code <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </article>
+                        <article class="project-card" data-category="ai software">
+                            <div class="project-visual visual-draw" aria-hidden="true">
+                                <div class="draw-surface">
+                                    <svg viewBox="0 0 310 190" fill="none" aria-hidden="true">
+                                        <path d="M30 135 C70 46 100 170 149 79 S229 30 274 102" stroke="#ffcd38" stroke-width="5" stroke-linecap="round"/>
+                                        <circle cx="274" cy="102" r="9" stroke="#ffe8a0" stroke-width="2"/>
+                                        <path d="M285 116v25m-12-13h25" stroke="#ffe8a0" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="draw-label">INDEX FINGER TRACKING <span>● LIVE</span></div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-overline"><span>EXPERIMENT</span><span>COMPUTER VISION</span></div>
+                                <h3>Webcam Draw <span aria-hidden="true">↗</span></h3>
+                                <p>A hands-free drawing experiment that uses webcam-based hand tracking to turn your index finger into a virtual pen. Still being improved.</p>
+                                <div class="tags"><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Computer Vision</span></div>
+                                <a class="project-link" href="https://github.com/Mrayan116/Webcam-draw" target="_blank" rel="noopener noreferrer">Explore code <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </article>
+                        <article class="project-card" data-category="software">
+                            <div class="project-visual visual-game" aria-hidden="true">
+                                <div class="game-scene">
+                                    <div class="game-heading">SORT IT OUT <small>03 / 03</small></div>
+                                    <div class="falling">♻</div>
+                                    <div class="game-bins"><span>RECYCLE</span><span>ORGANIC</span><span>WASTE</span></div>
+                                </div>
+                            </div>
+                            <div class="project-details">
+                                <div class="project-overline"><span>HACKATHON</span><span class="award">★ 3RD PLACE · MILLHACKS</span></div>
+                                <h3>Sustainability Game <span aria-hidden="true">↗</span></h3>
+                                <p>A team-built recycling game where players sort falling waste into the right bins. Awarded third place at MillHacks.</p>
+                                <div class="tags"><span>Python</span><span>Pygame</span><span>Game Development</span><span>Teamwork</span></div>
+                                <span class="no-link">Hackathon project</span>
+                            </div>
+                        </article>
+                    </div>
+                    <a class="bottom-link" href="https://github.com/Mrayan116" target="_blank" rel="noopener noreferrer">See more on GitHub <span aria-hidden="true">↗</span></a>
+                </section>
+                <section id="experience" class="section reveal" aria-labelledby="experience-heading">
+                    <div class="section-heading">
+                        <span class="section-num">02</span>
+                        <div>
+                            <p class="eyebrow">MY BACKGROUND</p>
+                            <h2 id="experience-heading">Experience & education<span class="accent">.</span></h2>
+                        </div>
+                    </div>
+                    <div class="experience-item experience-feature">
+                        <div class="experience-banner">
+                            <img src="assets/romac-logo.png" alt="Romac Metal Works logo" loading="lazy">
+                        </div>
+                        <div class="experience-body">
+                            <div class="experience-date">FEB 2024 – JUN 2024</div>
+                            <h3>Software Engineer Intern <span class="accent">·</span> Romac Metal Works</h3>
+                            <p>Supported internal software and data workflows using SQL, Oracle APEX, and Python. Worked on inventory data, automation tasks, and updates to digital safety forms alongside team members.</p>
+                            <div class="tags"><span>SQL</span><span>Oracle APEX</span><span>Python</span><span>Automation</span></div>
+                        </div>
+                    </div>
+                    <div class="experience-item experience-feature">
+                        <div class="experience-banner">
+                            <img src="assets/guelph-crest.png" alt="University of Guelph crest" loading="lazy">
+                        </div>
+                        <div class="experience-body">
+                            <div class="experience-date">2025 – 2030 (EXPECTED)</div>
+                            <h3>Bachelor of Computing, Software Engineering <span class="accent">·</span> University of Guelph</h3>
+                            <p>Honours co-op program with an interest in artificial intelligence. Developing a foundation in data structures, object-oriented programming, computer organization, mathematics, and software design.</p>
+                            <div class="tags"><span>Co-op</span><span>Software Engineering</span><span>AI</span></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills" class="section reveal" aria-labelledby="skills-heading">
+                    <div class="section-heading">
+                        <span class="section-num">03</span>
+                        <div>
+                            <p class="eyebrow">MY TOOLBOX</p>
+                            <h2 id="skills-heading">Tools I work with<span class="accent">.</span></h2>
+                        </div>
+                    </div>
+                    <p class="section-subtitle">Technologies I've used in classes, projects, and work. Always learning more.</p>
+                    <div class="skills-grid">
+                        <div class="skill-group">
+                            <h3>Languages</h3>
+                            <div class="tags"><span>Python</span><span>Java</span><span>C</span><span>TypeScript</span><span>SQL</span></div>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Web & backend</h3>
+                            <div class="tags"><span>Next.js</span><span>React</span><span>FastAPI</span><span>Tailwind CSS</span><span>REST APIs</span></div>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Data & AI</h3>
+                            <div class="tags"><span>PostgreSQL</span><span>Oracle APEX</span><span>LLM APIs</span><span>OpenCV</span><span>MediaPipe</span></div>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Tools</h3>
+                            <div class="tags"><span>Git</span><span>GitHub</span><span>Linux</span><span>VS Code</span></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" class="section contact-section reveal" aria-labelledby="contact-heading">
+                    <p class="eyebrow">04 / WHAT'S NEXT?</p>
+                    <h2 id="contact-heading">Let's build something <span class="accent">good.</span></h2>
+                    <p>I'm always interested in meeting people, learning from engineers, and exploring meaningful co-op opportunities. If you'd like to connect, my inbox is open.</p>
+                    <a class="primary-button" href="mailto:rayan26278@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+                </section>
+                <footer class="footer"><span>Designed & built by Muhammad Rayan</span><a href="#top">Back to top ↑</a></footer>
+            </main>
+        </div>
+    </body>
 </html>
